@@ -45,6 +45,7 @@ export class ListaComponent implements OnInit{
   verDetalle(videojuego: Videojuego): void{
     // Utilizamos el router para navegar a la página de detalles con el ID como parámetro
     this.videojuegoSeleccionado = videojuego;
+    
   }
 
   /**
