@@ -1,0 +1,14 @@
+<div class="navegador">
+    
+    <nav>
+        <div class="enlaces">
+      <ul>
+        <li><a routerLink="/lista">Lista</a></li>
+        <li><a routerLink="/contacto">Contacto</a></li>
+        <li><a routerLink="/nosotros">Sobre Nosotros</a></li>
+       
+      </ul>
+    </div>
+    <div class="nombre-usuario" *ngIf="nombreUsuario">Bienvenidx, {{ nombreUsuario }}</div>
+    </nav>
+  </div>

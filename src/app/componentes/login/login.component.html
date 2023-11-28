@@ -1,0 +1,29 @@
+<div class="body">
+  
+  <div class="login">
+
+    <div class="banner">
+      <img [src]="imagenUrl">
+    </div>
+
+    <div class="principal">
+      <h1>Bienvenidx a GameList</h1>
+
+      <div class="username">
+        <label for="username">Usuario:</label>
+        <input type="text" id="username" [(ngModel)]="username" />
+      </div>
+
+      <div class="password">
+        <label for="password">Password:</label>
+        <input type="password" id="password" [(ngModel)]="password" />
+      </div>
+
+      <button (click)="iniciarSesion()">Entrar</button>
+
+      <div *ngIf="mostrarError" class="error">
+        <p>{{ mensajeError }}</p>
+      </div>
+    </div>
+  </div>
+</div>

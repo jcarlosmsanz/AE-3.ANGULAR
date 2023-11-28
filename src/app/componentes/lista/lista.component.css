@@ -1,0 +1,122 @@
+@font-face {
+    font-family: 'Nomerok';
+    src: url('../../../assets/fonts/sk-nomerok.ttf') format('truetype');
+    /* Ajusta la ruta y el formato según tus archivos de fuentes */
+  }
+  
+  .body {
+    margin: 0;
+    padding: 70px;
+    height: 100vh; /* Ajusta la altura según sea necesario */
+    background: linear-gradient(to bottom,#111111, #664488 ); 
+    color: white; /* Color del texto para asegurar la legibilidad en el degradado */
+    justify-content: center;
+
+   
+  }
+
+  /* Estilo general de la tabla */
+table {
+  width: 1000px;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background: linear-gradient(to bottom,#92D1C3, #664488 );
+  margin: 0 300px;
+
+}
+
+
+
+/* Estilo del encabezado de la tabla */
+th, td {
+  border: 0px solid #ddd;
+  padding: 10px;
+  text-align: left;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+th {
+  background-color: #6c5b7b;
+  
+}
+
+/* Estilo de las filas de la tabla */
+tbody tr {
+  cursor: pointer; /* Cambia el cursor al pasar sobre las filas */
+}
+
+/* Estilo de las filas al pasar el ratón */
+tbody tr:hover {
+  background-color: #FFD5FF; /* Cambia el color de fondo al pasar el ratón */
+  color: #111111;
+}
+
+/* Estilo del mensaje de "NO SE HAN ENCONTRADO VIDEJUEGOS" */
+.rojo {
+  color: red;
+  font-weight: bold;
+}
+
+.datos{
+  display: flex;
+}
+
+.detalle{
+  font-family: 'Nomerok';
+  width: 420px;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background: linear-gradient(to bottom,#92D1C3, #664488 );
+  margin: 0 300px;
+  box-shadow: 0px 0px 53px rgba(0, 0, 0, 0.644);
+}
+
+.detalles{
+  height: 24px;
+  padding: 20px;
+  align-items: center;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+.imagen img{
+  max-width: 180px;
+  margin-top: 24px;
+
+}
+
+.titulo{
+  
+  height: 48px;
+  background-color: #664488;
+  
+}
+h2{
+  padding: 10px;
+  color:#ffffff;
+}
+.boton{
+  padding: 8px;
+ margin-left: 16px;
+ 
+}
+ /* Estilo para el botón */
+ button {
+  margin-bottom: 16px;
+  margin-top: 0px;
+  background-color: #92D1C3;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 24px;
+  cursor: pointer;
+  font-family: 'Nomerok', sans-serif;
+  font-weight: bold;
+  font-size: large;
+  letter-spacing: 2px;
+  transition: background-color 0.3s; /* Agrega una transición suave al cambio de color */
+  transition: color 0.3s;
+}
+
+button:hover {
+  background-color: #FFD5FF;
+  color:#111111;
+}

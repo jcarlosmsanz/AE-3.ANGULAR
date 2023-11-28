@@ -1,0 +1,78 @@
+@font-face {
+    font-family: 'Nomerok';
+    src: url('../../../assets/fonts/sk-nomerok.ttf') format('truetype');
+    /* Ajusta la ruta y el formato según tus archivos de fuentes */
+  }
+  
+  .body {
+    margin: 0;
+    padding: 70px;
+    height: 100vh; /* Ajusta la altura según sea necesario */
+    background: linear-gradient(to bottom,#111111, #664488 );
+    color: white; /* Color del texto para asegurar la legibilidad en el degradado */
+  }
+
+  
+  .container {
+    width: 500px;
+    margin: auto;
+    margin-top: 80px;
+    padding: 20px;
+    border: 0px solid #ccc;
+    border-radius: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to bottom,#92D1C3, #664488 );
+    font-family: 'Nomerok', sans-serif;
+    color: #ffffff;
+
+    box-shadow: 0px 0px 53px rgba(0, 0, 0, 0.644);
+}
+
+.imagenes img {
+  max-width: 130px;
+}
+
+.imagenes:hover{
+  transform: scaleX(-1);
+}
+
+h2 {
+    font-size: 45px;
+    color: #FFD5FF;
+}
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 24px;
+    box-sizing: border-box;
+}
+
+ /* Estilo para el botón */
+ button {
+    background-color: #92D1C3;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 24px;
+    cursor: pointer;
+    font-family: 'Nomerok', sans-serif;
+    font-weight: bold;
+    font-size: large;
+    letter-spacing: 2px;
+    transition: background-color 0.3s; /* Agrega una transición suave al cambio de color */
+  }
+  
+  button:hover {
+    background-color:#FFD5FF;
+    color:#111111;
+  }

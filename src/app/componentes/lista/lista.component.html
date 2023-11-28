@@ -1,0 +1,57 @@
+<app-navegador></app-navegador>
+
+<div class="body">
+  <div class="tabla">
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Titulo</th>
+
+          <th>Valoración</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- 
+                Recorremos la lista, y si pulsamos en alguna fila, ejecutaremos el metodo
+                "verDetalle", pasandole el videojuego seleccionado
+            -->
+        <tr *ngFor="let v of listaVideojuegos" (click)="verDetalle(v)">
+          <td>{{ v.id }}</td>
+          <td>{{ v.titulo }}</td>
+
+          <td>{{ v.valoracion }}</td>
+        </tr>
+        <tr *ngIf="listaVideojuegos.length == 0">
+          <td class="rojo" colspan="4">NO SE HAN ENCONTRADO VIDEJUEGOS</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div *ngIf="videojuegoSeleccionado" class="detalle">
+    <div class="titulo">
+    <h2>Detalles del Juego:</h2>
+  </div>
+    <div class="datos">
+      
+      <div class="detalles">
+        
+        <div><strong>ID:</strong> {{ videojuegoSeleccionado.id }}</div>
+        <div><strong>Título:</strong> {{ videojuegoSeleccionado.titulo }}</div>
+        <div>
+          <strong>Compañía:</strong> {{ videojuegoSeleccionado.compania }}
+        </div>
+        <div>
+          <strong>Valoración:</strong> {{ videojuegoSeleccionado.valoracion }}
+        </div>
+      </div>
+      <div class="imagen">
+        <img [src]="videojuegoSeleccionado.imagen" />
+      </div>
+    </div>
+    <div class="boton">
+      <button (click)="limpiar()">Cerrar</button>
+    </div>
+  </div>
+</div>

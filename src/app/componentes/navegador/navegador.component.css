@@ -1,0 +1,54 @@
+@font-face {
+  font-family: 'Nomerok';
+  src: url('../../../assets/fonts/sk-nomerok.ttf') format('truetype');
+}
+
+.navegador {
+  background-color: #111111;
+  color: #fff;
+  padding: 10px;
+  width: 100%;
+  height: 64px;
+  box-sizing: border-box;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.enlaces {
+  display: inline-block;
+}
+
+.nombre-usuario {
+  font-weight: bold;
+  font-family: 'Nomerok';
+  color: #FFD5FF;
+  padding: 10px;
+  /* Ajusta el espaciado si es necesario */
+  display: inline-block;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  margin-left: 16px;
+}
+
+nav li {
+  display: inline;
+  margin-right: 40px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: x-large;
+  font-family: 'Nomerok';
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #FFD5FF;
+}

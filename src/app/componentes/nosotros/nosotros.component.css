@@ -1,0 +1,57 @@
+@font-face {
+    font-family: 'Nomerok';
+    src: url('../../../assets/fonts/sk-nomerok.ttf') format('truetype');
+    /* Ajusta la ruta y el formato según tus archivos de fuentes */
+  }
+  
+  
+  .body {
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Ajusta la altura según sea necesario */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom,#111111, #664488 ); 
+   /* background: linear-gradient(to bottom,#f8b195, #f67280, #c06c84, #6c5b7b, #355c7d );  Cambia los colores según tus preferencias */
+    color: white; /* Color del texto para asegurar la legibilidad en el degradado */
+  }
+  
+  .card{
+    font-family: 'Nomerok';
+    width: 300px;
+    margin: 25px;
+    padding: 40px 20px;
+    background: linear-gradient(to bottom,#92D1C3, #664488 );
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    transition: all 0.5s ease;
+  }
+
+  .cards{
+    display: flex;
+  }
+
+  .title .fas {
+    color:#664488;
+    font-size: 60px;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+  }
+
+  .title h2{
+    color:#FFD5FF;
+    font-size: 40px;
+    margin-top: 15px;
+  }
+
+  .subtitle{
+    color:aliceblue;
+    font-size: 25px;
+  }
+
+  .card:hover{
+    transform: scale(1.05);
+  }
