@@ -9,7 +9,7 @@ import { ListaComponent } from './componentes/lista/lista.component';
 import { NavegadorComponent } from './componentes/navegador/navegador.component';
 import { ContactoComponent } from './componentes/contacto/contacto.component';
 import { NosotrosComponent } from './componentes/nosotros/nosotros.component';
-import { DetalleComponent } from './componentes/detalle/detalle.component';
+
 import { UserService } from './servicios/user.service';
 
 @NgModule({
@@ -19,8 +19,7 @@ import { UserService } from './servicios/user.service';
     ListaComponent,
     NavegadorComponent,
     ContactoComponent,
-    NosotrosComponent,
-    DetalleComponent
+    NosotrosComponent
   ],
   imports: [
     BrowserModule,
